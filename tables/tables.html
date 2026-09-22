@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicios con tablas</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Mi primera tabla</h2>
+            <table border="1">
+                <tr> <!--  Primera fila (tr row) -->
+                    <td>Componente</td>
+                    <td>Marca</td>
+                    <td>Precio</td>
+                    <td>Color</td>
+                </tr>
+                <tr> <!--  Segunda fila -->
+                    <td>CPU</td>
+                    <td>Intel</td>
+                    <td>457,15 €</td>
+                    <td>Negro</td>
+                </tr>
+                <tr> <!--  Tercera fila -->
+                    <td>Pantalla</td>
+                    <td>HP</td>
+                    <td>57.3 €</td>
+                    <td>Gris</td>
+                </tr>
+            </table>
+        </article>
+
+        <article>
+            <h2>Tabla con títulos</h2>
+            <table border="1">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>asdf</td>
+                    <td>asdf</td>
+                    <td>fdsafd</td>
+                </tr>
+                <tr>
+                    <td>asdf</td>
+                    <td>fdsa</td>
+                    <td>asdfasdf</td>
+                </tr>
+                <tr>
+                    <td>asdfasdf</td>
+                    <td>asdfasdf</td>
+                    <td>fdsafds</td>
+                </tr>
+            </table>
+        </article>
+
+        <article>
+            <h2>Tabla con etiquetas semánticas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tomates</td>
+                        <td>1.67</td>
+                    </tr>
+                    <tr>
+                        <td>Aguacates</td>
+                        <td>3.74</td>
+                    </tr>
+                    <tr>
+                        <td>Pan</td>
+                        <td>1.33</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>TOTAL</td>
+                        <td>5.67</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <article>
+            <h2>Tablas con combinación de celdas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Bolsillo</th>
+                        <th>Normal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hasta los cojones del pensamiento positivo</td>
+                        <td>Buenaventura del Charco</td>
+                        <td>Anaya</td>
+                        <td>Anagrama</td>
+                    </tr>
+                    <tr>
+                        <td>La piel hembra</td>
+                        <td rowspan="2">Elaine Vilar</td>
+                        <td colspan="2">Anagrama</td>
+                    </tr>
+                    <!-- Fila nueva: -->
+                    <tr>
+                        <td>El cielo de la selva</td>
+                        <!-- no pongo el td de autor, porque tiene un rowspan el de arriba -->
+                        <td>Anagrama</td>
+                        <td>Otra</td>
+                    </tr>
+                    <tr>
+                        <td>The world game</td>
+                        <td>Jamile Sayed</td>
+                        <td>As</td>
+                        <td>Otra</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <h2>Tabla con rowspans y colspans</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ratón</td>
+                        <td rowspan="3">3</td>
+                        <td>21.3</td>
+                    </tr>
+                    <tr>
+                        <td>Teclado</td>
+                        <td>61.77</td>
+                    </tr>
+                    <tr>
+                        <td>Monitor</td>
+                        <td>103.21</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="2">CPU</td>
+                        <td>201</td>
+                    </tr>
+                    <tr>
+                        <td>301</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">TOTAL</td>
+                        <td>1038.79</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        <br><br><br><br><br><br><br><br><br><br>
+    </main>
+    <footer>
+        <small>Esta página está hecha por .....</small>
+    </footer>
+</body>
+
+</html>
