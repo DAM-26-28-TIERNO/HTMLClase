@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formularios</h1>
+        <!-- Aquí también iría nav: el menú -->
+    </header>
+    <main>
+        <article>
+            <h2>Formulario de registro:</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="fieldName">Nombre: </label>
+                    <input type="text" id="fieldName" name="fieldName" placeholder="Nombre...">
+                    <br>
+                    <label for="age">Edad:</label>
+                    <input type="number" id="age" name="age" value="35">
+                    <br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" disabled>
+                    <br>
+                    <label for="pass">Password: </label>
+                    <input type="password" id="pass" name="password">
+                    <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos adicionales</legend>
+                    <p>Selecciona tu curso:</p>
+                    <input type="radio" id="dam" name="curso" value="dam">
+                    <label for="dam">DAM</label>
+                    <br>
+                    <input type="radio" id="daw" name="curso" value="daw">
+                    <label for="daw">DAW</label>
+                    <br>
+                    <input type="radio" id="asir" name="curso" value="asir">
+                    <label for="asir">ASIR</label>
+                    <br>
+
+                    <p>Grupos favoritos:</p>
+                    <input type="checkbox" name="music" id="estopa" value="estopa">
+                    <label for="estopa">Estopa</label>
+                    <br>
+                    <input type="checkbox" name="music" id="amaral" value="amaral">
+                    <label for="amaral">Amaral</label>
+                    <br>
+
+                    <label for="color">Color favorito</label>
+                    <input type="color" name="color" id="color">
+                    <br>
+                    <label for="birth">Fecha de nacimiento</label>
+                    <input type="date" name="birth" id="birth">
+                    <br>
+
+                    <label for="comment">Envía tu comentario:</label>
+                    <br>
+                    <textarea name="comment" id="comment" rows="5" cols="30"></textarea>
+                    <br>
+
+                    <label for="teacher">Elige tu profe favorito:</label>
+                    <select name="teacher" id="teacher">
+                        <option value="Sete">Sete Ruiz</option>
+                        <option value="Diego">Diego</option>
+                        <option value="Rubén">Rubén</option>
+                        <option value="Mikel">Mikel</option>
+                        <option value="Rafa">Rafael</option>
+                    </select>
+                    <br>
+                </fieldset>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </form>
+        </article>
+        <article>
+            <h2>Inscripción evento informático</h2>
+            <form action="#">
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" name="name" placeholder="Nombre..." minlength="2" maxlength="15" pattern="[A-Z]*[a-z]+">
+                <br>
+                <label for="ageInscr">Edad:</label>
+                <input type="number" id="ageInscr" name="age" placeholder="Edad..." min="18" max="120">
+                <br>
+                <label for="emailInscr">Email: </label>
+                <input type="email" id="emailInscr" name="email" placeholder="Email...">
+                <br>
+                <label for="bank">Tarjeta bancaria: </label>
+                <input type="text" id="bank" name="bank" placeholder="XXXX XXXX XXXX XXXX" pattern="[0-9]{8,12}">
+                <br>
+                <p>Entrada:</p>
+                <input type="radio" name="entrada" id="normal">
+                <label for="normal">Normal</label>
+                <br>
+                <input type="radio" name="entrada" id="vip">
+                <label for="vip">VIP</label>
+                <br>
+                <input type="radio" name="entrada" id="gold">
+                <label for="gold">Gold</label>
+                <br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
